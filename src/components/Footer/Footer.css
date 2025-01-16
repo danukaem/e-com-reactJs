@@ -1,0 +1,8 @@
+.footer-style-1{
+    width: 100%;
+    background-color: rgb(34, 38, 47);
+    height: 10vh;
+    display: inline-flex;
+    padding: 10px;
+    color: white;
+}

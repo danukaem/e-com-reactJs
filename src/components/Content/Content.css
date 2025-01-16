@@ -1,0 +1,8 @@
+.content-style-1 {
+  width: 90%;
+  background-color: rgb(117, 212, 105);
+  height: 90vh;
+  display: inline-flex;
+  padding: 10px;
+  overflow: auto;
+}

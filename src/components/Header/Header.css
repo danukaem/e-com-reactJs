@@ -1,0 +1,12 @@
+.header-style-1{
+    width: 100%;
+    background-color: beige;
+    height: 10vh;
+    padding: 10px;
+
+}
+
+.header-item-list{
+    /* float: right; */
+    text-align: right;
+}

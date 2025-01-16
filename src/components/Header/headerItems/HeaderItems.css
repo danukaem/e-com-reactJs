@@ -1,0 +1,16 @@
+.header-item {
+  display: inline-block;
+  margin: 1px;
+  color: Blue;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.header-item:hover {
+  cursor: pointer;
+  color: brown;
+  background: gray;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+}

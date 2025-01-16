@@ -1,0 +1,7 @@
+.sidebar-style-1{
+    width: 10%;
+    background-color: rgb(113, 143, 240);
+    height: 90vh;
+    display: inline-flex;
+    padding: 10px;
+}
