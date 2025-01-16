@@ -12,11 +12,11 @@ function Header() {
 
   return (
     <div className="header-style-1 header-item-list">
-        <nav>
-          {headerItems.map((item, index) => {
-            return <HeaderItems key={index} item={item} />;
-          })}
-        </nav>
+      <nav>
+        {headerItems.map((item, index) => {
+          return <HeaderItems key={index} item={item} />;
+        })}
+      </nav>
     </div>
   );
 }

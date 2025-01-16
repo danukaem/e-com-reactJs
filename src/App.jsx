@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Content from "./components/Content/Content";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -10,12 +10,19 @@ import ProductPage from "./components/Content/pages/ProductPage";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
       <SideBar />
-      <Content />
+      <Routes>
+        <Route path="/" element={<Content />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/products" element={<ProductPage />} />
+        </Route>
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
