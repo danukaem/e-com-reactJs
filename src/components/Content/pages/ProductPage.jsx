@@ -1,22 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Product from "../product/Product";
 import axios from "axios";
 
 function ProductPage() {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://fakestoreapi.com/products")
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data));
+  // }, []);
 
+  // const fetchProducts = useMemo(() => {
+  //   return axios.get("https://fakestoreapi.com/products").then((res) => {
+  //     return res.data;
+  //   });
+  // });
 
   // useEffect(() => {
-  //   axios.get("https://fakestoreapi.com/products").then((res) => {
-  //     setProducts(res.data);
+  //   fetchProducts.then((res) => {
+  //     setProducts(res);
   //   });
-  // }, [ ]);
+  // }, []);
+
+  useEffect(() => {
+    axios.get("https://fakestoreapi.com/products").then((res) => {
+      setProducts(res.data);
+    });
+  }, [ ]);
 
   return (
     <>
