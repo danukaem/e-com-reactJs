@@ -13,12 +13,12 @@ function Content() {
 
   return (
     <>
-      <ContentContext.Provider value={val}>
+      {/* <ContentContext.Provider value={val}> */}
         <div className="content-style-1 ">
           <Outlet />
-          <input type="text" onChange={typeVal} />
+          {/* <input type="text" onChange={typeVal} /> */}
         </div>
-      </ContentContext.Provider>
+      {/* </ContentContext.Provider> */}
     </>
   );
 }
