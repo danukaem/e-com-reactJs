@@ -8,7 +8,11 @@ function Header() {
     { name: "Products", to: "/products" },
     { name: "Orders", to: "/orders" },
     { name: "Cart", to: "/cart" },
-    { name: "UseRef", to: "/useRef" },
+    { name: "UseRef", to: "/useRef" }, 
+    { name: "UseMemo", to: "/useMemo" }, 
+    { name: "UseCallback", to: "/useCallback" }, 
+    
+    
   ];
 
   return (

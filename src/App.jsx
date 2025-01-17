@@ -8,6 +8,8 @@ import CartPage from "./components/Content/pages/CartPage";
 import OrdersPage from "./components/Content/pages/OrdersPage";
 import ProductPage from "./components/Content/pages/ProductPage";
 import UseRefPage from "./components/Content/pages/UseRefPage";
+import UseMemo from "./components/Content/pages/UseMemo";
+import UseCallback from "./components/Content/pages/UseCallback";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/orders" element={<OrdersPage />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/useRef" element={<UseRefPage />} />
+          <Route path="/useMemo" element={<UseMemo />} />
+          <Route path="/useCallback" element={<UseCallback />} />
         </Route>
       </Routes>
       <Footer />
