@@ -11,6 +11,7 @@ function Header() {
     { name: "UseRef", to: "/useRef" }, 
     { name: "UseMemo", to: "/useMemo" }, 
     { name: "UseCallback", to: "/useCallback" }, 
+    { name: "ContextAPI", to: "/contextAPI" }, 
     
     
   ];
