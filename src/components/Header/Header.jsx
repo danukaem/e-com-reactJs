@@ -8,6 +8,7 @@ function Header() {
     { name: "Products", to: "/products" },
     { name: "Orders", to: "/orders" },
     { name: "Cart", to: "/cart" },
+    { name: "UseRef", to: "/useRef" },
   ];
 
   return (
