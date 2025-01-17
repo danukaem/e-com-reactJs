@@ -4,4 +4,5 @@
     height: 90vh;
     display: inline-flex;
     padding: 10px;
+    float: left;
 }

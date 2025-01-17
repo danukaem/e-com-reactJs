@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 const HeaderItems = ({ item }) => {
   return (
-    <div className="header-item">{item.name}</div>
-    // <Link className="header-item" to={item.to}>
-    //   {item.name}
-    // </Link>
+    <Link className="header-item" to={item.to}>
+      {item.name}
+    </Link>
   );
 };
 

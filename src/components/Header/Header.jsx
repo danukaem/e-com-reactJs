@@ -8,15 +8,16 @@ function Header() {
     { name: "Products", to: "/products" },
     { name: "Orders", to: "/orders" },
     { name: "Cart", to: "/cart" },
+    { name: "UseRef", to: "/useRef" },
   ];
 
   return (
     <div className="header-style-1 header-item-list">
-        <nav>
-          {headerItems.map((item, index) => {
-            return <HeaderItems key={index} item={item} />;
-          })}
-        </nav>
+      <nav>
+        {headerItems.map((item, index) => {
+          return <HeaderItems key={index} item={item} />;
+        })}
+      </nav>
     </div>
   );
 }
